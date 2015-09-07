@@ -4,8 +4,8 @@ dbHandle.select('YourDataCollection')
 ok=False
 i=0
 while ok==False:
-	res=dbHandle.fetch(1,(i-1)*1)
 	i+=1
+	res=dbHandle.fetch(1,(i-1)*1)
 	if len(res)==0:
 		ok=True
 	for item in res:
